@@ -1,0 +1,15 @@
+{
+  "name": "fe-scaffold",
+  "version": "1.0.0",
+  "description": "A FE scaffold, you can get it when you need webpack babel es6 eslint ",
+  "main": "main.js",
+  "dependencies": {
+      
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "author": "FunctionRun",
+  "license": "ISC"
+}
