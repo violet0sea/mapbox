@@ -20,3 +20,8 @@ npm install webpack -g
 5. npm run dev
 
 6. http://localhost:8110
+
+atom编辑器安装插件
+
+linter-eslint 
+File Header
