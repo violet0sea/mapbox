@@ -5,6 +5,8 @@ A FE scaffold, you can get it when you need webpack babel es6 eslint
 
 #### 全局安装webpack: http://webpack.github.io/docs/tutorials/getting-started/
 
+npm install webpack -g
+
 #### xxx为项目目录名
 
 1. git clone https://github.com/FunctionRun/FEscaffold.git  xxx
