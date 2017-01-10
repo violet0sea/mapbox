@@ -24,4 +24,5 @@ npm install webpack -g
 atom编辑器安装插件
 
 linter-eslint 
+
 File Header
