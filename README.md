@@ -21,8 +21,8 @@ npm install webpack -g
 
 6. http://localhost:8110
 
-atom编辑器安装插件
+#### atom编辑器安装插件
 
-linter-eslint 
+linter-eslint  
 
 File Header
