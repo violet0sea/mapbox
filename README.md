@@ -23,6 +23,10 @@ npm install webpack -g
 
 #### atom编辑器安装插件
 
-linter-eslint  
+1. linter-eslint  eslint检查
 
-File Header
+2. File Header 开发注释
+
+3. jsFormatter js格式化
+
+4. prettyjson  json格式化
