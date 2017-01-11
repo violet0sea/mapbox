@@ -1,8 +1,8 @@
 /*
  * @Author: FunctionRun
  * @Date:   2017-01-10 10:15:18
- * @Last Modified by:   FunctionRun
- * @Last Modified time: 2017-01-10 11:37:31
+* @Last modified by:   haiwang
+* @Last modified time: 2017-01-11 16:36:04
  * @Email: zhangyujie3344521@163.com
  * @File Path: /Users/zhangyujie/GitHub/FEscaffold/webpack.config.js
  * @File Name: webpack.config.js
@@ -42,7 +42,7 @@ let webpackConfig = {
         port: hostConfig.port,
         historyApiFallback: true
     },
-    devtool: 'cheap-source-map',
+    devtool: 'cheap-module-source-map',
     module: {
         loaders: [{
             test: /\.css$/,
@@ -52,9 +52,10 @@ let webpackConfig = {
             loader: 'babel-loader',
             include: [
                 // 只去解析运行目录下的 src
-                path.join(process.cwd(), './main.js'),
+                path.join(process.cwd(), './index.js'),
                 path.join(process.cwd(), './src'),
-                path.join(process.cwd(), './test')
+                path.join(process.cwd(), './test'),
+                path.join(process.cwd(), './public')
             ]
         }, {
             test: /\.json$/,
@@ -65,7 +66,7 @@ let webpackConfig = {
         }]
     },
     babel: {
-        presets: ['es2015', 'react', 'stage-3'],
+        presets: ['es2015', 'react'],
         plugins: ['transform-object-rest-spread', 'transform-class-properties']
     },
     plugins: [
@@ -83,7 +84,7 @@ if (process.env.NODE_ENV === 'DEVELOPMENT') {
     webpackConfig = Object.assign(webpackConfig, {
         entry: [
             'webpack/hot/dev-server',
-            './index.js' //, 
+            './index.js' //,
             // hotMiddlewareScript
         ],
         output: {

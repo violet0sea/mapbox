@@ -1,9 +1,13 @@
 {
   "author": "FunctionRun",
   "dependencies": {
-     "babel-loader": "^6.2.2",
+    "babel-loader": "^6.2.2",
     "cross-env": "^2.0.1",
     "css-loader": "^0.23.1",
+    "d3": "3.5.17",
+    "json-loader": "^0.5.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.14.1",
@@ -11,7 +15,12 @@
   },
   "description": "A FE scaffold, you can get it when you need webpack babel es6 eslint ",
   "devDependencies": {
+    "babel-core": "^6.21.0",
     "babel-eslint": "^5.0.4",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "eslint": "^3.12.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
@@ -22,7 +31,7 @@
   "main": "index.js",
   "name": "fe-scaffold",
   "scripts": {
-    "dev": "cross-env NODE_ENV=DEVELOPMENT webpack-dev-server --devtool --progress --colors --hot --content-base",
+    "dev": "cross-env NODE_ENV=DEVELOPMENT webpack-dev-server --progress --colors --hot --content-base",
     "libs": "webpack --config webpack.lib.js",
     "pro": "cross-env NODE_ENV=PRODUCTION webpack-dev-server --devtool --progress --colors --hot --content-base",
     "zip": "webpack -p"

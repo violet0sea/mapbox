@@ -1,0 +1,94 @@
+#withTriangle{
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/*背景层*/
+#withTriangle .backgroundContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#withTriangle .background {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#withTriangle .backgroundHover{
+    height: 100%;
+}
+
+#withTriangle .textContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    z-index: 2;
+}
+
+#withTriangle .text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+#withTriangle .text:hover{
+    color:  white;
+    cursor: pointer;
+}
+
+/*动画类*/
+#withTriangle .theAnimation {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+/*选中的样式*/
+#withTriangle .textSelected{
+    color:  white;
+    cursor: pointer;
+}
+
+#withTriangle .backgroundHoverClick{
+    height: 100%;
+    opacity: 1;
+}
+
+/*三角形的样式*/
+#withTriangle .tritangleContainer{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+}
+
+#withTriangle .tritangle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    border-right: 10px solid  #49fdfc;
+    border-top: 10px solid  #49fdfc;
+    border-bottom: 10px solid  transparent;
+    border-left: 10px solid  transparent;
+}
+
+#withTriangle .hide{
+    height: 0;
+    overflow: hidden;
+}

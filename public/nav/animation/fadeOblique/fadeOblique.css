@@ -1,0 +1,79 @@
+#fadeOblique{
+    display: inline-block;
+    border: 1px solid white;
+    margin:0 10px;
+
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+/*背景层*/
+#fadeOblique .backgroundContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #0e83cd;
+    overflow: hidden;
+}
+
+#fadeOblique .background {
+    width: 0%;
+    height: 200%;
+
+    margin: auto;
+    background-color: white;
+
+    transform: rotate(-20deg);
+    position: relative;
+    top: -50%;
+}
+
+#fadeOblique .backgroundHover{
+    width: 90%;
+    background-color: white;
+}
+
+#fadeOblique .textContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#fadeOblique .text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    color: white;
+}
+
+#fadeOblique .text:hover{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+/*动画类*/
+#fadeOblique .theAnimation {
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+/*选中的样式*/
+#fadeOblique .textSelected{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+#fadeOblique .backgroundHoverClick{
+    width: 90%;
+    background-color: white;
+}

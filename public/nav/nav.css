@@ -1,0 +1,83 @@
+/*
+* @Author: 彭虹杰
+* @Date:   2016-06-26 10:08:20
+* @Last modified by:   haiwang
+* @Last modified time: 2017-01-11 16:34:03
+* @Path: E:\github\tueasy5\Controls\src\controls\nav\nav.css
+* @Describle:
+*/
+
+ .Nav .NavItem{
+    position: absolute;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+
+ .Nav .NavItem span{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+    -moz-transition: -moz-transform 0.4s, background 0.4s;
+    transition: transform 0.4s, background 0.4s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50% -100px;
+    -moz-transform-origin: 50% 50% -100px;
+    transform-origin: 50% 50% -100px;
+}
+
+ .Nav .NavItem span::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: attr(data-hover);
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    transition: background 0.4s;
+    pointer-events: none;
+}
+
+ .Nav.vertical .NavItem span::before {
+    top: 0;
+    left: 100%;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+ .Nav.vertical .NavItem:hover span {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+
+ .Nav.horizontal .NavItem span{
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+ .Nav.horizontal .NavItem span::before {
+    top: 100%;
+    left: 0;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+ .Nav.horizontal .NavItem:hover span {
+    -webkit-transform: rotateX(90deg) translateY(-100%);
+    -moz-transform: rotateX(90deg) translateY(-100%);
+    transform: rotateX(90deg) translateY(-100%);
+}

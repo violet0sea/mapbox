@@ -1,0 +1,73 @@
+#fadeFromLeft{
+    display: inline-block;
+    border: 1px solid white;
+    margin:0 10px;
+
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+/*背景层*/
+#fadeFromLeft .backgroundContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #0e83cd;
+}
+
+#fadeFromLeft .background {
+    width: 0%;
+    height: 100%;
+
+    background-color: white;
+}
+
+#fadeFromLeft .backgroundHover{
+    width: 100%;
+    background-color: white;
+}
+
+#fadeFromLeft .textContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#fadeFromLeft .text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    color: white;
+}
+
+#fadeFromLeft .text:hover{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+/*动画类*/
+#fadeFromLeft .theAnimation {
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+/*选中的样式*/
+#fadeFromLeft .textSelected{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+#fadeFromLeft .backgroundHoverClick{
+    width: 100%;
+    background-color: white;
+}

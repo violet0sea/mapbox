@@ -1,0 +1,82 @@
+#fadeIn{
+    display: inline-block;
+    border: 1px solid white;
+    margin:0 10px;
+
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+/*背景层*/
+#fadeIn .backgroundContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+}
+
+#fadeIn .background {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    background-color: #0e83cd;;
+
+    opacity: 1;
+}
+
+#fadeIn .backgroundHover{
+    height: 100%;
+    background-color: white;
+
+    opacity: 0;
+}
+
+#fadeIn .textContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    display: table;
+
+    z-index: 2;
+}
+
+#fadeIn .text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+    color: white;
+}
+
+#fadeIn .text:hover{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+/*动画类*/
+#fadeIn .theAnimation {
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+/*选中的样式*/
+#fadeIn .textSelected{
+    color:  #0e83cd;
+    cursor: pointer;
+}
+
+#fadeIn .backgroundHoverClick{
+    height: 100%;
+    background-color: white;
+
+    opacity: 0;
+}
